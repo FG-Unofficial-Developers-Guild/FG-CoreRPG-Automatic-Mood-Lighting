@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!-- Please see the LICENSE.md file included with this distribution for attribution and copyright information. -->
+
+<root>
+	<string name="opt_lab_automood_nightcolor">Auto Mood Lighting</string>
+	<string name="opt_val_automood_nightcolor_fire">Campfire</string>
+	<string name="opt_val_automood_nightcolor_night">Night</string>
+</root>

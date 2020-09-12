@@ -9,10 +9,18 @@
 		<ruleset>
 			<name>CoreRPG</name>
 		</ruleset>
+		<ruleset>
+			<name>PFRPG</name>
+		</ruleset>
+		<ruleset>
+			<name>3.5E</name>
+		</ruleset>
 	</properties>
 
 	<base>
 		<!-- Scripts -->
 		<script name="AutoMoodLighting" file="scripts/automoodlighting.lua" />
+		<!-- Strings -->
+		<includefile source="strings/automoodlighting.xml" />
 	</base>
 </root>
