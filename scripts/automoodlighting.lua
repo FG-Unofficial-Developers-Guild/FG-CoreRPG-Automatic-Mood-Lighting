@@ -5,6 +5,7 @@
 function onInit()
 	if User.isHost() then
 		DB.addHandler('calendar.current.hour', 'onUpdate', onTimeChanged)
+		onTimeChanged(node)
 	end
 	
 	OptionsManager.registerOption2('AUTONIGHTMODE', false, 'option_header_game', 'opt_lab_automood_nightcolor', 'option_entry_cycler', 
