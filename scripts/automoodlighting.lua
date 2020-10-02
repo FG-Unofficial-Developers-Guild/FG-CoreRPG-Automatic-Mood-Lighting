@@ -5,16 +5,16 @@
 function onInit()
 	if User.isHost() then
 		DB.addHandler('calendar.current.hour', 'onUpdate', onTimeChanged)
-		onTimeChanged(node)
 	end
+	
+	onTimeChanged()
 	
 	OptionsManager.registerOption2('AUTONIGHTMODE', false, 'option_header_game', 'opt_lab_automood_nightcolor', 'option_entry_cycler', 
 		{ labels = 'opt_val_automood_nightcolor_fire', values = 'fire', baselabel = 'opt_val_automood_nightcolor_night'})
 end
 
-function onTimeChanged(node)
-	local nodeCurrentTime = node.getParent()
-	local nHour = DB.getValue(nodeCurrentTime, 'hour')
+function onTimeChanged()
+	local nHour = DB.getValue(DB.findNode('calendar.current'), 'hour')
 	
 	if nHour < 6 or nHour >= 20 then
 		if OptionsManager.isOption('AUTONIGHTMODE', 'fire') then
