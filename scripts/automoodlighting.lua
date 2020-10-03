@@ -7,10 +7,10 @@ function onInit()
 		DB.addHandler('calendar.current.hour', 'onUpdate', onTimeChanged)
 	end
 	
-	onTimeChanged()
-	
 	OptionsManager.registerOption2('AUTONIGHTMODE', false, 'option_header_game', 'opt_lab_automood_nightcolor', 'option_entry_cycler', 
 		{ labels = 'opt_val_automood_nightcolor_fire', values = 'fire', baselabel = 'opt_val_automood_nightcolor_night'})
+	
+	onTimeChanged()
 end
 
 function onTimeChanged()
