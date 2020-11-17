@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<root version="3.3" release="3">
-	<!-- Please see the LICENSE.md file included with this distribution for attribution and copyright information. -->
+
+<!-- Please see the LICENSE.md file included with this distribution for attribution and copyright information. -->
+
+<root version='3.3' release='3'>
 	<properties>
 		<name>Automatic Mood Lighting</name>
 		<version>1.0.2</version>
 		<author>bmos (Wil Thieme)</author>
 		<description>This extension automatically changes the mood lighting throughtout the in-game day.</description>
-		<ruleset>
-			<name>CoreRPG</name>
-		</ruleset>
-		<ruleset>
-			<name>PFRPG</name>
-		</ruleset>
-		<ruleset>
-			<name>3.5E</name>
-		</ruleset>
+		<ruleset name="PFRPG" />
+		<ruleset name="3.5E" />
+		<ruleset name="CoreRPG" />
 	</properties>
 
 	<base>
